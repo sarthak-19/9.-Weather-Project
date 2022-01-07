@@ -24,7 +24,7 @@ app.post("/", function(req,res)
     https.get(url,function(response)
     {
         console.log(response.statusCode);
-    
+
         response.on("data",function(data)
         {
             const weatherData=JSON.parse(data);
